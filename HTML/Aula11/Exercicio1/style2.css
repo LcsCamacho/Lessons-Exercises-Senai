@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: blueviolet;
+}
+
+aside {
+    width: 20vw;
+    height: 65vh;
+    background-color: orange;
+   
+}
+
+main {
+    width: 100vw;
+    height: 65vh;
+    background-color: green;
+}
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: yellow;
+}

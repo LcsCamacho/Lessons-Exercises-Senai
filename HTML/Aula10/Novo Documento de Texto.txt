@@ -1,0 +1,4 @@
+definir tamanho de site 
+static busca o relativo
+absolute acompanha a tela se nao tiver relativo em sua ascendencia
+a margem segue um sentido horario

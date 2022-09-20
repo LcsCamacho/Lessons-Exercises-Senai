@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bloco {
+    width: 50vw;
+    height: 20vh;
+    border: 1px solid red;
+
+}
+
+#panda {
+    width: 15vw;
+    float: right;
+}
+
+
+.lista > li{
+    margin-left: 6px;
+    float: left;
+}
+
+ul {
+    list-style: none;
+}
+
+.exemplo {
+    width: 90vw;
+    margin: 30px;
+    height: 50vh;
+    border: 2px solid purple;
+}
+
+.exemplo > div{
+    width: 100px;
+    margin: 10px;
+    height: 50px;
+    border: 2px solid purple;
+}
+
+.exemplo > #caixa1{
+ 
+    border: 2px solid purple;
+}
+
+.exemplo > #caixa2{
+
+    border: 2px solid rgb(128, 105, 0);
+}
+
+.exemplo > #caixa3{
+ 
+    border: 2px solid rgb(26, 128, 0);
+}
+.exemplo > #caixa2 > #circulo{
+    position: absolute;
+    top: 0;
+    width: 20px;
+    margin: 5px;
+    height: 25px;
+    background-color: brown;
+    border-radius: 175px;
+    
+}

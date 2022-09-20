@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#c2 {
+    justify-content: space-between;
+}
+
+#c3 {
+    justify-content: space-evenly;
+}
+
+#c4 {
+    justify-content: center;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: blue;
+}

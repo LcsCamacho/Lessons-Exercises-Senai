@@ -1,0 +1,36 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: darkorchid;
+    padding: 0;
+    margin:0;
+}
+#circulo1{
+    top: 0; 
+    left: 0;
+}
+#circulo2{
+    top: 0; 
+    right: 0;
+}
+#circulo3{
+    bottom: 0; 
+    left: 0;
+}
+#circulo4{
+    bottom: 0; 
+    right: 0;
+}
+#circulo5{
+   margin:50vh 50vw;
+   
+}
+
+.circulos{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(245, 6, 245);
+    border-radius:75px;
+    
+}

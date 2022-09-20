@@ -1,0 +1,21 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin:0;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    background-color: black;
+}
+main{
+    width: 100vw;
+    height: 75vh;
+    background-color: rgb(69, 33, 231);
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(238, 15, 182);
+}

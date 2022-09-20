@@ -1,0 +1,16 @@
+.caixa{
+    border: 2px solid salmon;
+    /* margem reconhece os pixels em sentido horario  */
+    margin: 50px 50px 50px 50px;
+}
+.caixa2{
+    border: 2px solid salmon;
+    padding: 50px;
+    text-align: center;
+    text-shadow: none;
+}
+.caixa3{
+    border: 2px solid salmon;
+    /* margem: Cima Baixo = 50px;esquerda direita 100px */
+    margin: 50px 100px;
+}

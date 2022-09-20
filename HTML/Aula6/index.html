@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+	<head>    
+		<meta charset="utf-8"/> 
+			<title>Currículo Lucas</title>
+	</head>
+    <body> 
+		<font face="arial">
+		<header align="center-left">
+			<!--
+			Action = Para onde os dados do form irão ex action="https: ou c:/"
+			Method = Maneira que sera enviado
+			Label = Etiqueta que atribui nome ao input indicado
+			For = Identifica o input que pertence a Label
+			Input = Entrada de dados
+			Placeholder = Texto de Identificação
+			-->
+			<form action="">
+				<label for="nome">Nome Completo</label>
+				<input type="text" id="nome" placeholder="Insira seu nome" required />
+				
+				<br><label for="nome2">Nome Completo</label>
+				<input id="nome2"type="text"  placeholder="Insira seu nome"/>
+				
+				<br><label for="dataNasc">Data de Nascimento</label>
+				<input id="dataNasc"type="Date"  placeholder="Insira a data de nascimento"/>
+				
+				<br><label for="indica">Voce nos indicaria?</label>
+				<input id="indica" type="number" min="1" max="5"/>
+				
+				<br><label for="indica">Escolha sua cor favorita</label>
+				<input id="cor" type="color">
+				
+				<br><label for="Volume">Em qual volume voce ouve musica?</label>
+				<input id="Volume" type="range" min="0" max="100">
+				
+				<br>
+				<br>
+				<br>
+				
+				<fieldset>
+				<legend>Genero: </legend>
+				<input type="radio" id="sexo-m" name="sexo" value="Masculino">
+				<label for="sexo-m">Masculino</label>
+				
+				<input type="radio" id="sexo-f" name="sexo" value="Feminino">
+				<label for="sexo-f">Feminino</label>
+				<br><input type="submit" value="OK" name="sexo"/>
+				
+				</fieldset>
+				<fieldset>
+				<legend>Monte seu lanche</legend>
+				
+				<input type="checkbox" id="salada" name="lanche">
+				<label for="lanche">Salada</label><br>
+				
+				<input type="checkbox" id="hb" name="lanche">
+				<label for="lanche">Hamburguer</label><br>
+			
+				<input type="checkbox" id="molho" name="lanche">
+				<label for="lanche">Molho</label><br>
+				
+				<input type="checkbox" id="bc" name="lanche">
+				<label for="lanche">Bacon</label><br>
+				
+				<input type="checkbox" id="mns" name="lanche">
+				<label for="lanche">Maionese Caseira da Casa</label>
+				
+				<br><input type="submit" value="OK" name="lanche"/>
+				</fieldset>
+				
+				<br>
+				
+				<label for="info">Informações Adicionais</label><br>
+				<textarea id="info">
+					
+				</textarea>
+				
+				<br>
+				
+				<label for="senha">SENHA</label>
+				<input id="senha" type="password"/>
+				
+				<br>
+				
+				<select>
+					<option>Amparo</option>
+					<option>jaguariuna</option>
+					<option>pedroca</option>
+					<option>holambra</option>
+				</select>
+				<br><input type="reset" value="OK"/>
+				<br><input type="submit" value="OK"/>
+			</form>
+		</header>
+		<main align="center-left">
+		</main>
+		<footer align="center-left">
+		</footer>
+	</body>
+</html>

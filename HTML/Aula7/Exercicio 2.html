@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+	<head>    
+		<meta charset="utf-8"/> 
+			<title>Exercicio 2</title>
+	</head>
+    <body> 
+		<font face="arial">
+		<header align="">
+			<!--
+			Action = Para onde os dados do form irão ex action="https: ou c:/"
+			Method = Maneira que sera enviado
+			Label = Etiqueta que atribui nome ao input indicado
+			For = Identifica o input que pertence a Label
+			Input = Entrada de dados
+			Placeholder = Texto de Identificação
+			-->
+			
+			<p><font size="4"><b>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</b></font></p>
+					
+			<form action="">
+				<table>
+					<thead>
+						<tr>
+							<td><label for="login">Login</label></td>
+							</td><input type="text" id="login" required /></td>
+						</tr>	
+						<tr>
+							<td><label for="senha">Senha</label></td>
+							<td><input type="password" id="senha" required /></td>
+						<tr>	
+							<td><label for="status">Status</label></td>
+							<td><select id="status">
+								<option>ATIVO</option>
+								<option>INATIVO</option>
+							</select></td>
+						</tr>	
+						<tr>
+							<td><label for="tipo">Tipo</label></td>
+							<input type="radio" id="tcn" name="tipo"/>Técnico</td>
+							<input type="radio" id="Prof" name="tipo"/>Professor</td>
+							<input type="radio" id="Aln" name="tipo"/>Aluno</td>
+						<tr>
+							<td><label for="data1">Data Criação</label></td>
+							<td><input id="data1"type="Date"/></td>
+						</tr>
+						<tr>	
+							<td><label for="tipo">Perfil</label></td>
+							<td><input type="radio" id="cvd" name="perfil"/>Convidado</td>
+							<td><input type="radio" id="adm" name="perfil"/>Administrador</td>
+						</tr>
+					<thead>
+				</table>
+				<br>
+				
+				<label for="obs">Observações</label>
+				<textarea id="obs"></textarea>
+				
+				<br>
+				
+				<label for="modulos">Módulos</label>
+				<input type="checkbox" id="cvd"/>Compras
+				<input type="checkbox" id="acd"/>Acadêmico
+				<input type="checkbox" id="dcm"/>Documentação
+				
+				<br>
+				
+				<input type="checkbox" id="rh"/>Recursos Humanos
+				<input type="checkbox" id="bbl"/>Biblioteca
+				
+				<br>
+				
+				<input type="submit" value="Cadastrar"/>
+				<input type="submit" value="Excluir"/>
+			</form>
+		</header>
+		<main align="center-left">
+		</main>
+		<footer align="center-left">
+		</footer>
+	</body>
+</html>

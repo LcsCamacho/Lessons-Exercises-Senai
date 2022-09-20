@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+}
+
+header>nav>ul {
+    display: flex;
+
+}
+
+header>nav>ul>li {
+    padding: 5px;
+    margin: 0px 10px 0px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+}
+
+header>nav>ul>li:hover {
+    background-color: gray;
+    color: aliceblue;
+    border: none;
+}
+
+header>nav>img {
+    width: 50px;
+    height: 50px;
+}
+
+header>nav>p {
+    padding: 12px 0px 0px;
+    margin: 0px 0px 0px 12px;
+}
+
+/* MAIN */
+section {
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20vh;
+    width: 80vw;
+    display: flex;
+    margin: 100px 0px 50px 0px;
+}
+
+section>img {
+    width: 400px;
+    height: 250px;
+}
+
+section>div {
+    margin: 0px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25vw;
+    height: 30vh;
+}
+
+section>div>#title {
+    color: blue;
+    font-size: 24px;
+}
+
+section>div>button {
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: blue;
+    border: none;
+    color: aliceblue;
+}

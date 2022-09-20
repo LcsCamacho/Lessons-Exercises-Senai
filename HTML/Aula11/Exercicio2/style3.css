@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 20vh;
+    background-color: blueviolet;
+}
+
+main {
+    width: 100vw;
+    height: 65vh;
+    background-color: blue;
+}
+
+footer {
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(241, 184, 24);
+}
+
+.qdd {
+    margin-left: 10vw;
+    width: 80vw;
+    height: 65vh;
+    background-color: yellow;
+    position: relative;
+}
+
+.qdd>#qdd1 {
+    position: absolute;
+    float:right;
+    top: 35%;
+    right: 25%;
+    margin-left: 35%;
+    width: 10vw;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
+
+.qdd>#qdd2 {
+    position: absolute;
+    float:right;
+    top: 35%;
+    left: 25%;
+    width: 10vw;
+    height: 20vh;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+}
