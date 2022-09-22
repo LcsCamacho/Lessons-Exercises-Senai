@@ -3,27 +3,37 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
+#include<stddef.h>
+#include<locale.h>
 
-int a,b,decimal;
-bool conversorBinario(int decimal){
-	int decimal;
-	//entrada
-	scanf("%d",&decimal);
-	
+
+int a,i,decimal,binario[99],resto;
+
+
+void* conversorBinario(int decimal){
 	//processamento
-	if (decimal%2 == 0){
-	
+	while(decimal!=0){
+		resto=decimal%2;
+		decimal=decimal/2;
+		if (resto==0)binario[i]=0;
+		else if(resto == 1)binario[i]=1;
+		i++;
+		
 	}
-	if (decimal%2 == 1){
+	i = i-1;
+	printf("i = %d",i);
+	
+	for(i;i>=0;i--) {
+		printf("[%d]",binario[i]);
+	}
 
-	}
-	
-	return ;
 }
-
-int main(int argc, char*argv[]){
-
-	
+int main(int argc, char*argv[]){		
+	setlocale(LC_ALL,"");
+	//entrada
+	printf("Calculadora de Decimal para Binário. Digite o número desejado:");
+	scanf("%d",&a);
+	conversorBinario(a);
 	
 }
 
