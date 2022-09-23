@@ -10,19 +10,17 @@
 int a,i,decimal,binario[99],resto;
 
 
-void* conversorBinario(int decimal){
+void conversorBinario(int decimal){
 	//processamento
 	while(decimal!=0){
 		resto=decimal%2;
 		decimal=decimal/2;
+		
 		if (resto==0)binario[i]=0;
 		else if(resto == 1)binario[i]=1;
 		i++;
-		
 	}
 	i = i-1;
-	printf("i = %d",i);
-	
 	for(i;i>=0;i--) {
 		printf("[%d]",binario[i]);
 	}

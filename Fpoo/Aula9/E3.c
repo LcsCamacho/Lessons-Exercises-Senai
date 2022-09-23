@@ -5,17 +5,16 @@
 #include<stdbool.h>
 
 
-bool calcularMedia(float n1,float n2){
-	
-	float media = (n1+n2)/2;
-	return media>=1;
+float paraC(float f){
+
+	return f/9*5-32;
 }
 
-int main(int argc, char*argv[]){
-	int a,b;
-	scanf("%d",&a);
-	scanf("%d",&b);
-	printf("%d",calcularMedia(a,b));
+int main(){
+	float f;
+	scanf("%f",&f);
+	
+	printf("f = %.0f\nc = %.0f",f,paraC(f));
 }
 
 
