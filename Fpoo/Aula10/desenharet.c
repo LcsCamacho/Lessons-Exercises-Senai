@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<stdbool.h>
+#include<locale.h>
 
 
 void retangulo (int altura, int largura, char c){
@@ -17,6 +17,7 @@ void retangulo (int altura, int largura, char c){
 	}
 }
 int main(){
+	setlocale(LC_ALL,"")
 	int alt,larg;
 	char c;
 	printf("Digite a altura: ");
