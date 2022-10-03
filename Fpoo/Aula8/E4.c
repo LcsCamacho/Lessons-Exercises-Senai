@@ -27,7 +27,6 @@ int main() {
 	//validação
 	for(i=0;i<5;i++){
 		if(eleit[i]<0)printf("Digite um valor válido");
-		if(votos[i]<0)printf("Digite um valor válido");
 	}
 	
 	

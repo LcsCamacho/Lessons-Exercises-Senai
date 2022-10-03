@@ -9,19 +9,26 @@
 #include<time.h>
 #include<string.h>
 //variaveis
-int dia,mes,ano;
+int dia,mes,ano,meses,dias,mesAtual=9,diaAtual,x,y;
 char nomes[10][10];
 //funcao
 void calcIdade(){
+	setlocale(LC_ALL,"");
 	printf("Dia : ");
 	scanf("%d",&dia);
 	printf("Mês : ");
 	scanf("%d",&mes);
 	printf("Ano : ");
 	scanf("%d",&ano);
-	printf("Voce esta vivendo há:\n");
-	printf("dias:%d\nmeses:%d\nanos:%d",30-dia,12-mes,2022-ano);
-	return 2022-ano;
+	ano = 2022-ano;
+	x = 12-mesAtual;
+	if(mes>mesAtual){
+		ano-=1;
+	}
+	meses=(12*ano)+x;
+	y=diaAtual-dia;
+	dias=(30*meses)+y;
+	printf("dias%d\nmeses%d\nanos:%d",dias,meses,ano);
 }
 int main(){
 	calcIdade();
