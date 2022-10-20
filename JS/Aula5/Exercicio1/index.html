@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin:0;
+        box-sizing: border-box;
+    }
+    body {
+        background-color: rgb(0, 72, 255);
+
+        font-family:'Arial Black';
+        color: azure;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section {
+        background-color: white;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        width: 60vw;
+        height: 50vh;
+        border-radius: 10px;
+        box-shadow: 3px 3px 10px black;
+        color: black;
+        font-size: 20pt;
+    }
+
+    footer {
+        font-weight: bold;
+    }
+    .recebe{
+        
+        margin: 20px 0px 0px 20px;
+    }
+    #contar{
+        width: 15%;
+    }
+    .resultado{
+        display:flex;
+        width: 99%;
+        height: 25px;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div class="recebe">
+            <label for="">Inicio: </label>
+            <input type="number" id="inicio"><br>
+            <label for="">Fim: </label>
+            <input type="number" id="fim"><br>
+            <label for="">Passo: </label>
+            <input type="number" id="passo"><br>
+            
+            <input type="button" value="Contar" id="contar" onclick="contador()">
+            <p>Contando:</p>
+            <div class="resultado"></div>
+        </div>
+        
+    </section>
+    <footer>
+        <p>Lucas Camacho Training</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

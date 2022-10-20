@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+
+        <div class="top">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html"><img src="MarketMobile.gif" alt="Logo"></a>
+                    <p>MarketMobile ©</p>
+                </div>
+                <!-- menu topo -->
+                <ul>
+                    <li><a href="index.html">
+                        Home</a></li>
+                    <li><a href="../saibamais/index.html">
+                        Saiba Mais</a></li>
+                    <li><a href="../trabalheconosco/index.html">
+                        Trabalhe Conosco</a></li>
+                    <li><a href="../sobrenos/index.html">
+                        Sobre Nós</a></li>
+                    <li><a href="../contato/index.html">
+                        Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </header>
+    <main>
+
+
+        <!-- card1 -->
+        <div class="centralizamain">
+            <div class="card">
+                <img id="imgcard" src="MarketMobile.gif" alt="cardmain">
+                <div class="descricao">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam, at voluptas omnis,
+                        odit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias quaerat accusamus
+                        laborum praesentium dolor qui veniam expedita dicta explicabo rerum provident repellat
+                        reiciendis
+                        enim soluta exercitationem eos voluptatem minus?
+                    </p>
+                    <button>lorem ipsum</button>
+                </div>
+            </div>
+
+
+            <!-- card2 -->
+            <div class="card">
+                <div class="descricao">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam, at voluptas
+                        omnis,
+                        odit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias quaerat
+                        accusamus
+                        laborum praesentium dolor qui veniam expedita dicta explicabo rerum provident repellat
+                        reiciendis
+                        enim soluta exercitationem eos voluptatem minus?
+                    </p>
+                    <button>lorem ipsum</button>
+                </div>
+                <img id="imgcard" src="MarketMobile.gif" alt="cardmain">
+            </div>
+
+
+            <!-- card3 -->
+            <div class="card">
+                <img id="imgcard" src="MarketMobile.gif" alt="cardmain">
+                <div class="descricao">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores veniam, at voluptas omnis,
+                        odit.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, molestias quaerat accusamus
+                        laborum praesentium dolor qui veniam expedita dicta explicabo rerum provident repellat
+                        reiciendis
+                        enim soluta exercitationem eos voluptatem minus?
+                    </p>
+                    <button>lorem ipsum</button>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+</body>
+<script>
+    var rotate = 0
+    function rotateimg(){
+        if(rotate > 0){
+            setInterval(() => {
+                let img = document.querySelector('#imgcard')
+                img.style.rotate = rotate+"deg"
+                rotate+=10
+            }, 100)
+        }else{
+            setInterval(() => {
+                let img = document.querySelector('#imgcard')
+                img.style.rotate = rotate+"deg"
+                rotate-=10
+            }, 100)
+        }
+    }
+    rotateimg();
+</script>
+</html>

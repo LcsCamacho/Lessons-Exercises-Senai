@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 150vh;
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'main sidebar'
+        'main sidebar2'
+        'footer footer'
+    ;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 40% 40% 10%;
+}
+
+.header {
+    grid-area: header;
+    background-color: bisque;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: main;
+    background-color: rgb(32, 251, 4);
+}
+
+.container-cards {
+    position: relative;
+    width: 95%;
+    height: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 25%));
+    grid-template-rows: repeat(auto-fill, 200px);
+}
+
+.card {
+    position: absolute;
+    perspective: 100px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px 2px black;
+    background-color: rgb(122, 130, 130);
+    animation: animate 1s ease-in-out infinite;
+    transition: all 2s;
+}
+
+.card2 {
+    position: absolute;
+    perspective: 100px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px 2px black;
+    background-color: rgb(122, 130, 130);
+    animation: animate2 1s ease-in-out infinite;
+    transition: all 2s;
+}
+
+.card3 {
+    position: absolute;
+    perspective: 100px;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 4px 2px black;
+    background-color: rgb(122, 130, 130);
+    animation: animate3 1s ease-in-out infinite;
+    transition: all 2s;
+}
+
+@keyframes animate {
+
+    20% {
+        top: 10px;
+        background-color: black;
+    }
+
+    40% {
+        top: 20px;
+        background-color: blueviolet;
+    }
+
+    60% {
+        top: 40px;
+        background-color: chartreuse;
+    }
+
+    80% {
+        top: 80px;
+        background-color: crimson;
+    }
+}
+
+@keyframes animate2 {
+
+    20% {
+        left: 10px;
+        background-color: black;
+    }
+
+    40% {
+        left: 20px;
+        background-color: blueviolet;
+    }
+
+    60% {
+        left: 40px;
+        background-color: chartreuse;
+    }
+
+    80% {
+        left: 80px; 
+        background-color: crimson;
+    }
+}
+@keyframes animate3 {
+
+    20% {
+        left: 10px;
+        top: 10px;
+        background-color: black;
+    }
+
+    40% {
+        left: 20px;
+        top: 20px;
+        background-color: blueviolet;
+    }
+
+    60% {
+        left: 40px;
+        top: 40px;
+        background-color: chartreuse;
+    }
+
+    80% {
+        left: 80px;
+        top: 80px;
+        background-color: crimson;
+    }
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(255, 0, 195);
+}
+
+.sidebar2 {
+    grid-area: sidebar2;
+    background-color: rgb(255, 0, 30);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: rgb(0, 0, 0);
+}

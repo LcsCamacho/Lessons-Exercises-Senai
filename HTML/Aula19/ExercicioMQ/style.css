@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-size: 16px;
+}
+
+body {
+    height: 150vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+.top {
+    margin: 0px 0px 0px 0px;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    width: 80vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(0, 0, 0);
+
+}
+
+.menu>.logo {
+    padding: 5px;
+    align-items: center;
+    display: flex;
+}
+
+.menu>.logo>a>img {
+    width: 100px;
+    height: 100px;
+}
+
+.menu>ul {
+    margin: 0px 70px 0px 20px;
+    display: flex;
+}
+
+.menu>ul>li {
+    margin: 0px 5px 0px 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu>ul>li:hover {
+    color: rgb(255, 255, 255);
+    background-color: gray;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+/* Main */
+.centralizamain {
+    width: 60vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    margin: 30px 0px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.card>img {
+    width: 500px;
+    height: 350px;
+}
+
+.descricao {
+    margin: 0px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 35vh;
+    width: 25vw;
+}
+
+.descricao>h1 {
+    font-size: 18px;
+    color: rgb(46, 102, 255);
+}
+
+.descricao>button {
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(24, 24, 253);
+    border-radius: 10px;
+    color: aliceblue;
+    border: none;
+    width: 130px;
+}
+@media (max-width: 1000px){
+    .card{
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 50px 0px;
+        width: 100%;
+        box-shadow: 2px 2px 5px 5px black;  
+    }
+    .descricao{
+        width: 80%;
+        align-items: center;
+    }
+    .card>img{
+        margin: 20px 0px 0px;
+        width: 80%;
+        height: 60%;
+    }
+    .centralizamain {
+        align-items: center;
+        width: 80vw;
+    }
+    .descricao>button {
+        margin: 30px 0px;
+    }
+    .descricao {
+        margin: 50px 0px;
+    }
+    #imgcard-middle{
+        margin: 10px 0px 0px;
+    }
+}

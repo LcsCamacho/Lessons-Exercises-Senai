@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20pt;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    position: absolute;
+    left: -60vw;
+    top: 0;
+    transition: left .5s;
+}
+li{
+    border: 2px solid red;
+    float: left;
+    padding: 0px 10px;
+}
+
+nav{
+    width: 60vw;
+    height: 50vh;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+}
+
+.pesquisa{
+    display: flex;
+}
+#check{
+    display: none;
+}
+#hamburguer:hover{
+    border: 2px solid red;
+}
+.menuteste{
+    position:absolute;
+    left: -30vw;
+    top: 0;
+    width: 40vw;
+    height: 60vh;
+    background-color: rgba(255, 0, 0, 0.459);
+}
+#check:checked ~ .menuteste{
+    left: -60vw;
+}
+input{
+    width: 50px;
+    height: 50px;
+}
+section{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    height: 30vh;
+}
+section>img{
+    padding: 50px;
+    width: 300px;
+    height: 300px;
+}
+/* >=min-width ou <=max-width */
+@media (max-width: 700px){
+    ul,input{
+        display:none;
+    }
+    nav{
+        display: flex;
+    }
+    #hamburguer{
+        display: block;
+    }
+    section{
+        flex-direction: column;
+    }
+    section>img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (min-width: 701px){
+    ul,input{
+        display:block;
+    }
+    nav{
+        display: flex;
+    }
+    #hamburguer{
+
+    
+    }
+}

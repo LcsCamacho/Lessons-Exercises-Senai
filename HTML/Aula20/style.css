@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./Assets/bg.png");
+}
+
+/* HEADER */
+/* HEADER */
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    color: aliceblue;
+    width: 100%;
+    height: 7%;
+}
+
+header>p {
+    padding: 0px 20px;
+
+}
+
+.dots {
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+}
+
+.dots:hover {
+    box-shadow: 0px 0px 5px 5px rgba(0, 255, 255, 0.558);
+}
+
+#menu-top-checkbox {
+    display: none;
+}
+
+.menu-dots {
+    border-radius: 15px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: absolute;
+    top: 60px;
+    right: 110px;
+    transition: right .5s;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 0;
+    height: 50vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu-dots::-webkit-scrollbar{
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.menu-dots::-webkit-scrollbar-thumb{
+    background-color: rgb(208, 208, 208);
+    border-radius: 20px;
+}
+
+#menu-top-checkbox:checked~.menu-dots {
+    width: 17vw;
+}
+
+.card-menutop {
+    border-radius: 10px;
+    margin: 10px 10px 10px 10px;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    width: 23%;
+    height: 23%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.card-menutop:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.card-menutop>img {
+    width: 40px;
+    height: 40px;
+}
+
+#icon-account {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#icon-account:hover {
+    box-shadow: 0px 0px 5px 5px rgba(0, 255, 255, 0.558);
+}
+
+/* MAIN */
+/* MAIN */
+.centralizamain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+.contentimg {
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin: 25px 0px;
+}
+
+.img {
+    background-image: url(./Assets/google_logo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.contentsearch {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 17%;
+}
+
+.contentsearch>#lupa {
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    width: 5%;
+    height: 70%;
+}
+
+#search {
+
+    padding: 0px 0px 0px 50px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#mic {
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    width: 6%;
+    height: 80%;
+}
+
+.contentcards {
+    margin: 25px 0px 0px 0px;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    margin: 20px 20px 0px 0px;
+    padding: 20px;
+    font-size: 15pt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 70%;
+
+}
+
+.card:hover {
+    background-color: rgba(240, 255, 255, 0.335);
+    border-radius: 5px;
+}
+
+.card-img {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.card-img>img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.card>p {
+    position: absolute;
+    bottom: 5%;
+    color: aliceblue;
+    font-size: 15pt;
+}
+
+.pesonalizachrome {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+.more-menu {
+    width: 20vw;
+    height: 20vh;
+    position: absolute;
+    top: 0;
+    background-color: red;
+}
+
+#check-more-menu {
+    display: none;
+}
+
+#more {
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -10px;
+    top: 2px;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.card:hover>#more {
+    display: block;
+    opacity: 1;
+}
+
+.pesonalizachrome>input {
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+}

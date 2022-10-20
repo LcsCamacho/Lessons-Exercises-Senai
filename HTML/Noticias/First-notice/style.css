@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+main {
+    margin: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 90%;
+}
+
+header {
+    position: absolute;
+    top: 20px;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 40px;
+    animation: animate 50s linear infinite;
+    border: 2px solid red;
+}
+
+@keyframes animate {
+
+    10% {
+        left: -10%;
+        border: 2px solid red;
+    }
+
+    20% {
+        left: -20%;
+        border: 2px solid blue;
+    }
+
+    30% {
+        left: -30%;
+        border: 2px solid green;
+    }
+
+    40% {
+        left: -40%;
+        border: 2px solid orange;
+    }
+
+    50% {
+        left: -50%;
+        border: 2px solid black;
+    }
+
+    60% {
+        left: -40%;
+        border: 5px solid red;
+    }
+
+    70% {
+        left: -30%;
+        border: 2px solid blue;
+    }
+
+    80% {
+        left: -20%;
+        border: 2px solid green;
+    }
+
+    90% {
+        left: -10%;
+        border: 2px solid orange;
+    }
+
+    100% {
+        left: 0%;
+        border: 2px solid purple;
+    }
+}
+
+.card-header {
+    margin: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-ch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-ch>img {
+    width: 100px;
+    height: auto;
+    margin: 0px 20px;
+}
+
+.txt-ch {
+    font-size: 13pt;
+    width: 250px;
+}
+
+.content-main {
+    margin: 10% 0px 0px 0px;
+}
+
+.content-main>p {
+    margin: 20px 0px;
+    line-height: 0.9;
+}
+
+.content-main>img {
+    width: 100%;
+    height: minmax(300px, 30%);
+}
+
+#img-dscpt {
+    font-size: 12pt;
+}
+
+#p-descpt {
+    margin: 30px 0px 0px 0px;
+    font-weight: 600;
+
+    font-size: 20pt;
+}
+
+.content-txt-notice {
+    display: flex;
+    flex-direction: column;
+}

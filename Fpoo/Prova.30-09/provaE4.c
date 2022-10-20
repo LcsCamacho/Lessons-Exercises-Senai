@@ -1,0 +1,56 @@
+lucas
+190
+jair
+50
+lula
+70
+zandaya
+120
+maisa
+80
+leticia
+110
+#include <locale.h>
+#include <stdio.h>
+#include <string.h>
+int main(){
+	setlocale(LC_ALL,"");
+	int qtdVotosTotal=0,maior=0;
+	int i,j,aux,aux3;
+	float porcentVotos[20];
+	int qtdVotos[20];
+	char nome[6][10],primeiro[10],aux2[10];
+	for(i=0;i<6;i++){
+		printf("\ndigite o nome do candidato: ");
+		scanf("%s",&nome);
+		printf("digite a quantidade de votos: ");
+		scanf("%d",&qtdVotos[i]);
+		qtdVotosTotal+=qtdVotos[i];
+		printf("soma %d",qtdVotosTotal);
+	}
+	printf("\nqtd %d",qtdVotos[1]);
+	for(i=0;i<6;i++){
+		porcentVotos[i]=(float)qtdVotos[i]/qtdVotosTotal*100;
+		printf("\nporcentVotos %.2f",porcentVotos[i]);
+		for(j=0;j<=3;j++){
+		    if(qtdVotos[i]>qtdVotos[j]){
+		        aux=qtdVotos[i];
+    			qtdVotos[i]=qtdVotos[j];
+    			qtdVotos[j]=aux;
+    			
+    			aux3=porcentVotos[i];
+    			porcentVotos[i]=porcentVotos[j];
+    			porcentVotos[j]=aux3;
+    			
+    			strcpy(aux2,nome[i]);
+    			strcpy(nome[i],nome[j]);
+    			strcpy(nome[j],aux2);
+		    }
+			
+        }
+	}
+    for(i=0;i<6;i++){
+        printf("\n%.2f",porcentVotos[i]);
+    }
+}
+

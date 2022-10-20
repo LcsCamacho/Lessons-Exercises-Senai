@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Verificador de Identidade</h1>
+    </header>
+    <section>
+        <div class="form">
+            <form action="">
+                <div class="anoNasc">
+                    Ano de nascimento: <input type="number" id="date" min="1920" max="2022"></div>
+                <div class="sexo">
+                    Sexo <input type="radio" name="sexo" id="sexom">Masculino
+                    <input type="radio" name="sexo" id="sexof">Feminino
+                </div>
+                <input type="button" onclick="calcIdade()" value="Verificar" id="submit">
+                <!-- Imagens -->
+                <div class="res"></div>
+                <div class="img">
+                    <div id="img2"></div>
+                    <div id="img3"></div>
+                    <div id="img4"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+
+</html>

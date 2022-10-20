@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <label for="check">
+            <img src="./menu.jpg" id="hamburguer"  alt="">
+        </label>
+        <input type="checkbox" id="check">
+        <div class="menuteste"></div>
+        
+        <ul id="ul">
+            <li>Home</li>
+            <li>Sobre Nós</li>
+            <li>Suporte</li>
+        </ul>
+        <img src="./logo.jpg" alt="">
+        <div class="pesquisa">
+            <p>Pesquisar:</p>
+            <input type="text">
+        </div>
+
+    </nav>
+    
+    <p>testo</p>
+    <section>
+        <img id="img" src="./logo.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae consectetur saepe inventore ex nostrum
+            quibusdam modi reiciendis, incidunt commodi quam nobis vel odit obcaecati cumque numquam totam, sit
+            accusamus perspiciatis.
+        </p>
+    </section>
+</body>
+<script>
+    function displaylist() {
+        let list = document.querySelector('#ul')
+        list.style.display = 'block'
+    }
+    var rotate = 0
+    setInterval(() => {
+        let img = document.querySelector('#img')
+        img.style.rotate = rotate+"deg"
+        rotate+=50
+    }, 100)
+</script>
+
+</html>

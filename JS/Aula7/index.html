@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #titulo-1{
+        width: 100vw;
+        height: 20vh;
+        background-color: white;
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <h1 id="titulo-1">Titulo 1</h1>
+    <h1 id="titulo-2">Titulo 2</h1>
+
+    <button id="adicionar">Adicionar Eventos</button>
+    <button id="executar">Executar Eventos</button>
+    <button id="remover">Remover Eventos</button>
+    <button id="mudacor">Fundo Azul</button>
+
+    <script>
+        document.querySelector('#adicionar').addEventListener('click', adicionarEventos)
+        document.querySelector('#remover').addEventListener('click', remove)
+        let mudacor = document.querySelector('#mudacor')
+        function adicionarEventos(){
+            let e = document.querySelector('#executar')
+            e.addEventListener('click', executar1)
+            e.addEventListener('click', executar2)
+        }
+        mudacor.addEventListener('click', (e)=>{
+            let title = document.querySelector('#titulo-1')
+            if(title.style.backgroundColor == "red" || title.style.backgroundColor == ""){
+                title.style.backgroundColor = 'blue'
+                e.target.textContent = 'Fundo Vermelho'
+            }else{
+                e.target.textContent = 'Fundo Azul'
+                title.style.backgroundColor = 'red'
+            }
+        })         
+        function executar1(){
+            let sec = new Date()
+            let title = document.querySelector('#titulo-1').textContent = sec.getSeconds();
+        }
+        function executar2(){
+            let sec = new Date()
+            let title = document.querySelector('#titulo-2').textContent = sec.getSeconds();
+        }
+        function remove(){
+            document.querySelector('#executar').removeEventListener('click',executar2)
+            document.querySelector('#executar').removeEventListener('click',titulored)
+            let title = document.querySelector('#titulo-1').style.backgroundColor = 'yellow'
+        }
+        
+    </script>
+</body>
+</html>
