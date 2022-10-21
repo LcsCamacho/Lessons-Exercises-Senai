@@ -134,3 +134,13 @@ header {
     display: flex;
     flex-direction: column;
 }
+
+@media (max-width: 1000px) {
+    .content-main{
+        height: auto;
+    }
+    iframe {
+        width: 600px;
+        height: 300px;
+    }
+}

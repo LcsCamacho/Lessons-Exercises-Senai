@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.wall-effect {
+    margin: 10vh 0px 0px 0px;
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    background-color: rgb(132, 0, 255);
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.wall-inner,.wall-inner1,.wall-inner2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 2s;
+}
+.wall-inner2{
+    position: absolute;
+    z-index: -1;
+}
+
+.wall-left1 {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: perspective(1000px) 
+    rotate3d(0, 1, 0, 20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(110, 63, 155);
+    z-index: 11;
+}
+
+.wall-right1 {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    transform: perspective(1000px) 
+    rotate3d(0, 1, 0, -20deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(90, 57, 121);
+    z-index: 11;
+    transition: all 3s;
+}
+
+.wall-left2 {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    transform: perspective(1000px) 
+    rotate3d(0, 1, 0, -20deg)
+    rotateY(180deg);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(90, 57, 121);
+    z-index: 11;
+    transition: all 3s;
+}
+
+.wall-left3 {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    transform: perspective(1000px) 
+    rotate3d(0, 1, 0, -20deg);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(90, 57, 121);
+    z-index: 11;
+    transition: all 3s;
+}
+
+.wall-right2 {
+    position: absolute;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    transform: perspective(1000px) 
+    rotate3d(0, 1, 0, -20deg);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(90, 57, 121);
+    z-index: 11;
+    transition: all 3s;
+}
+
+@keyframes animate {
+    10% {}
+
+    20% {}
+
+    30% {}
+
+    40% {}
+
+    50% {}
+
+    60% {}
+
+    70% {}
+
+    80% {}
+
+    90% {}
+
+    100% {}
+}
+
+/* .wall-right1:active {
+    transform: 
+        perspective(2000px)
+        rotate3d(0, 1, 0, -132deg) 
+        translate3d(100px, 0px, 1100px);
+    transition: all 1s;
+    width: 63%;
+    height: 110%;
+    background-color: rgb(253, 253, 253);
+} */
+
+.container {
+    width: 80%;
+    height: 95%;
+    display: grid;
+    gap: 50px 0px;
+    grid-auto-columns: 100%;
+    grid-template-rows: 1% 18% 18% 18% 18%;
+    font-size: 12pt;
+}
+
+.quadro {
+    background-color: aliceblue;
+    color: aliceblue;
+}
+
+.quadro > img {
+    width: 100%;
+    height: 100%;
+}
+
+@media  screen and (max-width: ) {
+    
+}
+

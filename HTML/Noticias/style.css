@@ -62,7 +62,7 @@ main {
 
 #frametempo {
     position: absolute;
-    right: 0%;
+    right: 2%;
     top: 25%;
     height: 40%;
     width: 30%;
@@ -70,7 +70,7 @@ main {
 
 #frametabela {
     position: absolute;
-    right: 0%;
+    right: 2%;
     top: 70%;
     height: 40%;
     width: 30%;
@@ -92,15 +92,15 @@ main {
 }
 
 .content-notice {
-    background-color: #ffffff;
     position: relative;
     width: 100%;
     height: 100%;
     transition: all 1s;
 }
+
 .content-notice:hover {
     height: 102%;
-    width: 101%;    
+    width: 101%;
 }
 
 .content-notice>a {
@@ -137,11 +137,10 @@ main {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .content-notice>a>img:hover {
-    transform: rotate3d(1, -4, 0, 15deg);
     transition: all 1s;
     box-shadow: 2px 2px 5px 5px black;
 }
@@ -175,29 +174,24 @@ main {
 
     50% {
         transform:
-        rotate3d(0, 0, 0, 0deg) 
-        translate3d(0px, 0px, 0px);
+            rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 0px);
     }
 
     75% {
-        transform: 
-        rotate3d(0, 1, 0, -88.5deg) 
-        translate3d(0px, 0px, 270px);
+        transform:
+            rotate3d(0, 1, 0, -88.5deg) translate3d(0px, 0px, 270px);
     }
+
     100% {
-        transform: 
-        rotate3d(0, 1, 0, -90deg) 
-        translate3d(0px, 0px, 270px);
+        transform:
+            rotate3d(0, 1, 0, -90deg) translate3d(0px, 0px, 270px);
     }
 }
 
-#mn2 ,#mn2-2 {
-    transform: perspective(1000px) 
-    rotate3d(0, 1, 0, 75.05deg) 
-    translate3d(0px, 0px, 258px);
-    right: 0%;
+#mn2,
+#mn2-2 {
+    transform: perspective(1000px) rotate3d(0, 1, 0, 75.05deg) translate3d(0px, 0px, 258px);
     animation: animate 4s linear infinite;
-    box-shadow: 2px 2px 5px 5px black;
 }
 
 #mn2-2 {
@@ -236,7 +230,151 @@ main {
 .last-notices>img:hover {
     cursor: pointer;
 }
+@media (max-width: 2000px) {
+    @keyframes animate {
 
+        50% {
+            transform:
+                rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 0px);
+        }
+    
+        75% {
+            transform:
+                rotate3d(0, 1, 0, -88.5deg) translate3d(0px, 0px, 140px);
+        }
+    
+        100% {
+            transform:
+                rotate3d(0, 1, 0, -90deg) translate3d(0px, 0px, 140px);
+        }
+    }
+    
+    #mn2,
+    #mn2-2 {
+        transform: perspective(1000px) 
+        rotate3d(0, 1, 0, 82.05deg) 
+        translate3d(0px, 0px, 140px);
+        animation: animate 4s linear infinite;
+    }
+    
+    #mn2-2 {
+        animation-delay: 2s;
+        animation-duration: 4s;
+    }
+}
+
+@media (max-width: 1000px) {
+    main {
+        width: 100%;
+    }
+    
+    .txt-cab > h2 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    #frametempo {
+        display: none;
+    }
+
+    #frametabela {
+        display: none;
+    }
+
+    #clima {
+        display: none;
+    }
+
+    .container, .container-2  {
+        width: 100%;
+        display: grid;
+        margin-left: 25%;
+        gap: 20px;
+        grid-template-columns: 80%;
+        grid-template-areas:
+            'Fn'
+            'Mn1'
+            'Mn2'
+            'Mn3'
+            'Ln'
+        ;
+    }
+    .container-2 {
+        margin-left: 15%;
+    }
+
+    .content-notice>a>img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    .content-notice>a>h1 {
+        width: 80%;
+        color: rgb(255, 255, 255);
+        font-size: 16pt;
+    }
+
+    .content-notice>a>h1:hover {
+        text-decoration: underline;
+    }
+
+    .content-notice>a>p {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        font-size: 12pt;
+        font-weight: 700;
+        color: aliceblue;
+    }
+
+    @keyframes animate {
+        1% {
+            width: 75%;
+        }
+
+        10% {
+            width: 40%;
+        }
+
+        20% {
+            width: 0%;
+        }
+
+        30% {
+            width: 0%;
+        }
+
+        40% {
+            width: 0%;
+        }
+
+        50% {
+            width: 100%;
+        }
+
+        75% {
+            width: 100%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    #mn2,
+    #mn2-2 {
+        transform: perspective(1000px) rotate3d(0, 0, 0, 0deg) translate3d(0px, 0px, 0px);
+        right: 0;
+        animation: animate 4s linear infinite;
+    }
+
+    #mn2 {
+        left: 0;
+        animation-delay: 6s;
+    }
+
+}
 
 /* SEGUNDA PAGE */
 /* SEGUNDA PAGE */

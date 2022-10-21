@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wall-effect">
+        <!-- 1PAGE ESQUERDA1 -->
+        <div class="wall-inner">
+            <div class="wall-left1">
+                <div class="container">
+                    <h1>Economia</h1>
+                    <div class="quadro">
+                        <img src="./Assets/musk.webp" alt="">
+                        <h1>AAAAAAAA</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXX</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2PAGE DIREITA1 e ESQUERDA2 -->
+        <div class="wall-inner1">
+            <div class="wall-left2">
+                <div class="container">
+                    <h1>Variados</h1>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="./Assets/bv-vizinhanca.webp" alt="">
+                        <h1>XXXXXXXXXXXXXXX</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wall-right1" onclick="trocaPage()">
+                <div class="container">
+                    <h1>Variados</h1>
+                    <div class="quadro">
+                        <img src="./Assets/maldicao-bh.webp" alt="">
+                        <h1>XXXXXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXX</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 3PAGE FUNDO DIREITA2 e ESQUERDA3 -->
+        <div class="wall-inner2">
+            <div class="wall-left3">
+                <div class="container">
+                    <h1>Politica</h1>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="./Assets/bolsolula.webp" alt="">
+                        <h1>XXXXXXXXX</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="wall-right2" onclick="trocaPage()">
+                <div class="container">
+                    <h1>Politica</h1>
+                    <div class="quadro">
+                        <img src="./Assets/bolso-lula.png" alt="">
+                        <h1>XXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXX</h1>
+                    </div>
+                    <div class="quadro">
+                        <img src="" alt="">
+                        <h1>XXXXXXXXX</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function trocaPage() {
+        document.querySelector('.wall-inner1').style =
+            `transform: 
+            perspective(700px)
+            rotate3d(0, 1, 0, -140deg) 
+            translate3d(0px, 0px, 1200px);
+        width: 150%;
+        height: 250%;
+        transition: all 3s;
+        `
+        document.querySelector('.wall-right1').style = `backface-visibility: hidden;`
+        document.querySelector('.wall-left3').style = 'display: flex;'
+        document.querySelector('.wall-right2').style = 'display: flex;'
+        document.querySelector('.wall-inner2').style = 'position: relative'
+
+    }
+</script>
+
+</html>
