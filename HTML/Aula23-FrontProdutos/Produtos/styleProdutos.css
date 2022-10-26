@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0182B0;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #04558A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-header {
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+h3 {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.list-header,
+.username {
+    width: auto;
+    display: flex;
+    padding: 10px;
+}
+
+main {
+    width: 100%;
+    background-color: #0182B0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centermain {
+    width: 90%;
+}
+
+.centermain>#cadastrar {
+    width: 162px;
+    background-color: transparent;
+    font-weight: bold;
+    color: yellow;
+    border-color: yellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 25px 0 0 0;
+}
+
+.centermain>#cadastrar:hover {
+    cursor: pointer;
+}
+
+.content-main {
+    width: 100%;
+    height: 80%;
+    margin: 50px 0 0 0;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.products-list {
+    display: flex;
+    margin: 0 20px;
+}
+
+.products-list>p {
+    margin: 0 25px;
+    padding: 0 10px;
+    width: 250px;
+    align-self: center;
+}
+
+.list-product {
+
+}
+#apagar {
+    width: 50px;
+    border-radius: 50%;
+}
+
+#apagar:active {
+    background-color: rgb(0, 0, 0);
+}
+
+#apagar:hover {
+    cursor: pointer;
+}
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    background-color: rgba(71, 0, 251, 0.367);
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid;
+}
+
+#fechar {
+    position: absolute;
+    top: 20%;
+    right: 31%;
+    padding: 10px;
+    color: black;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+#fechar:hover {
+    cursor: pointer;
+    background-color: rgb(168, 170, 170);
+}
+
+.form-cad {
+    position: absolute;
+    background-color: aliceblue;
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    height: 70%;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-cad-content {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.form-cad-content > div {
+    display: flex;
+    flex: none;
+    position: relative;
+    width: 100%;
+}
+
+/* input ni */
+.input-ni {
+    order: 0;
+    flex-grow: 0;
+}
+
+.input-ni>input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    padding: 25px 0 0 0;
+    font-size: 18pt;
+}
+
+.input-ni>label {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    color: rgb(108, 109, 110);
+}
+
+/* input aquisicao */
+.input-aqs {
+    order: 1;
+    flex-grow: 0;
+}
+
+.input-aqs>input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    padding: 25px 0 0 0;
+    font-size: 18pt;
+}
+
+.input-aqs>label {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    color: rgb(108, 109, 110);
+}
+
+/* input denominação */
+.input-den {
+    order: 2;
+    flex-grow: 0;
+}
+
+.input-den>input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    padding: 25px 0 0 0;
+    font-size: 18pt;
+}
+
+.input-den>label {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    color: rgb(108, 109, 110);
+}
+
+/* input valor */
+.input-val {
+    order: 3;
+    flex-grow: 0;
+}
+
+.input-val>input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    padding: 25px 0 0 0;
+    font-size: 18pt;
+}
+
+.input-val>label {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    color: rgb(108, 109, 110);
+}
+
+/* input image */
+.input-img {
+    order: 4;
+    flex-grow: 0;
+}
+
+.input-img>input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    padding: 25px 0 0 0;
+    font-size: 18pt;
+}
+
+.input-img>label {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    color: rgb(108, 109, 110);
+}
+
+/* input butons */
+.btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    order: 6;
+    flex-grow: 0;
+}
+
+.btns>input {
+    border-color: #6C117B;
+    color: #6C117B;
+    width: 40%;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 24pt;
+    font-weight: 700;
+}
+
+.btns>input:nth-child(2) {
+    background-color: #6C117B;
+    color: white;
+}
+.btns>input:nth-child(2):active {
+    background-color: #f7f5f7;
+}

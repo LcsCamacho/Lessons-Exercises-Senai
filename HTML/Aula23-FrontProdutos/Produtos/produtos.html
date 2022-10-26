@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleProdutos.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="content-header">
+            <div class="list-header">
+                <h3>Home</h3>
+                <h3>Produtos</h3>
+            </div>
+            <div class="username">
+                <h3>User Name</h3>
+                <img src="../Assets/avatar.png" width="50px" alt="Avatar">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="centermain">
+            <input type="button" value="Cadastrar" id="cadastrar" onclick="modalDisplay()">
+            <div class="content-main">
+                <div class="listProducts">
+                </div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <p id="fechar" onclick="fecharModal()">X</p>
+                <div class="form-cad">
+                    <div class="form-cad-content">
+                        <div class="input-ni">
+                            <input type="text" name="NI" id="NI">
+                            <label for="NI">NI</label>
+                        </div>
+        
+                        <div class="input-aqs">
+                            <input type="text" name="aq" id="aq">
+                            <label for="aq">Aquisição</label>
+                        </div>
+        
+                        <div class="input-den">
+                            <input type="text" name="den" id="den">
+                            <label for="den">Denominação</label>
+                        </div>
+        
+                        <div class="input-val">
+                            <input type="text" name="val" id="val">
+                            <label for="cal">Valor</label>
+                        </div>
+        
+                        <div class="input-img">
+                            <input type="text" name="img" id="img">
+                            <label for="NI">Enviar Imagem (URL)</label>
+                        </div>
+                        
+                        <div class="btns">
+                            <input type="button" value="Cancelar" onclick="fecharModal()">
+                            <input type="button" value="Cadastrar" onclick="cadNewProd()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

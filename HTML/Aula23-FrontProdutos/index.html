@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Home</title>
+</head>
+<body>
+    <main>
+        <div class="txt-explica">
+            <p id="txt-gerenciamento">Gerenciamento de Patrimônios</p>
+            <p>Identifique-se para acessar o sistema</p>
+        </div>
+        <div class="login-frame">
+            <div class="center-login-frame">
+                <div class="content-login-frame">
+                    <div class="email-input">
+                        <input type="email" name="username" id="username">
+                        <label for="username">E-mail</label>
+                    </div>
+                    <div class="password-input">
+                        <input type="password" name="password" id="password">
+                        <label for="password">Senha</label>
+                    </div>
+                    <p id="erro"></p>
+                    <input type="submit" value="Login" id="loginbtn" onclick="login()">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function login() {
+        const username = document.getElementById('username').value
+        const password = document.getElementById('password').value
+
+        if( password.length == 0 || username.length == 0 ) {
+            const erro = document.querySelector('#erro').innerText = 'username or password is wrong'
+            setTimeout(() => {
+                const erro = document.querySelector('#erro').innerText = ''
+            }, 2000);    
+        } else {
+            alert("Logado com Sucesso!")
+            window.location.assign("./Produtos/produtos.html")
+        }
+
+    }
+</script> 
+</html>

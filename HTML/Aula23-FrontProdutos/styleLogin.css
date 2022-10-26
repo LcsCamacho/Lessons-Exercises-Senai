@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #6C117B;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-explica {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    word-spacing: 1.5;
+    width: 40%;
+    padding: 40px;
+    color: aliceblue;
+}
+
+.txt-explica > p {
+    font-size: 18pt;
+}
+
+#txt-gerenciamento {
+    font-size: 35pt;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+/* Formulario de login */
+
+.login-frame {
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-login-frame {
+    width: 80%;
+    height: 70%;
+}
+
+.content-login-frame {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3% 0 0 0;
+}
+
+/* Email input */
+
+.email-input {
+    position: relative;
+    width: 100%;
+}
+
+.email-input > label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.email-input > input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 60px;
+    padding: 25px 0 0 0;
+    background-color: aliceblue;
+    font-size: 18pt;
+}
+
+/* Password input */
+
+.password-input {
+    position: relative;
+    width: 100%;
+}
+
+.password-input > label {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.password-input > input {
+    border: 0;
+    border-bottom: 3px solid rgb(93, 120, 242);
+    outline: none;
+    min-width: 100%;
+    height: 60px;
+    font-size: 16px;
+    padding: 25px 0 0 0;
+    background-color: aliceblue;
+    font-size: 18pt;
+}
+
+#loginbtn {
+    width: 100%;
+    height: 20%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16pt;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: blue;
+}
+
+#loginbtn:active {
+    background-color: rgb(249, 249, 249);
+}
+
+#erro {
+    color: red;
+}
